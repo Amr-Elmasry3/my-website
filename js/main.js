@@ -177,7 +177,7 @@ ScrollReveal().reveal(".picture-info .info , .main-heading",{delay: 300, origin:
 ScrollReveal().reveal(".landing-section .social , .scroll-icon",{delay: 600, origin: "bottom"});
 ScrollReveal().reveal(".my-picture",{delay: 700, origin: "top"});
 ScrollReveal().reveal(".details",{delay: 300, origin: "bottom"});
-ScrollReveal().reveal(".skill, .send-message, .footer ul li",{delay: 500, origin: "right", interval: 200});
+ScrollReveal().reveal(".skill, .send-message, .footer .link",{delay: 500, origin: "right", interval: 200});
 ScrollReveal().reveal(".card, .contact-info .box",{delay: 300, origin: "bottom", interval: 300});
 
 
