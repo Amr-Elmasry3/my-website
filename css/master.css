@@ -178,6 +178,9 @@ textarea:focus{
 }
 /* End Global Rules */
 /* Start My Website */
+.my-website{
+  overflow: hidden;
+}
 /* Start Headr */
 .headr{
   position: absolute;
