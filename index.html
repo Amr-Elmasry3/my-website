@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="my-website">
+    <!-- Start Headr -->
+    <div class="headr">
+      <div class="contanier">
+        <h2 class="logo">3MR</h2>
+        <ul class="links">
+          <li class="active">
+            <a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" class="stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person fill" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" fill="white" class="fill">
+                <path d="m0 0h24v24h-24z" fill="none"/>
+                <path d="m20.97 7.27c.39-.39.39-1.02 0-1.41l-2.83-2.83c-.39-.39-1.02-.39-1.41 0l-4.49 4.49-3.89-3.89c-.78-.78-2.05-.78-2.83 0l-1.9 1.9c-.78.78-.78 2.05 0 2.83l3.89 3.89-4.51 4.51v4.24h4.24l4.52-4.52 3.89 3.89c.95.95 2.23.6 2.83 0l1.9-1.9c.78-.78.78-2.05 0-2.83l-3.89-3.89zm-15.93-.33 1.89-1.9 1.27 1.27-1.18 1.19 1.41 1.41 1.19-1.19 1.2 1.2-1.9 1.9zm11.23 7.44-1.19 1.19 1.41 1.41 1.19-1.19 1.27 1.27-1.9 1.9-3.89-3.89 1.9-1.9zm-9.86 4.62h-1.41v-1.41l9.61-9.61 1.3 1.3.11.11zm9.61-12.44 1.41-1.41 1.41 1.41-1.41 1.41z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white" class="fill">
+                <circle cx="12" cy="6" r="1"/>
+                <path d="m6 17h12v2h-12z"/>
+                <path d="m10 11.83 2.792 2.794 3.932-3.935 1.276 1.311v-4h-4l1.31 1.275-2.519 2.519-2.791-2.794-4 4 1.414 1.414z"/>
+                <path d="m19 3h-3.29785l-.00049-.00067a4.49706 4.49706 0 0 0 -.319-.42444l-.01066-.01166a4.42613 4.42613 0 0 0 -2.89-1.51776 2.577 2.577 0 0 0 -.96392 0 4.42613 4.42613 0 0 0 -2.89 1.51776l-.01074.01166a4.49706 4.49706 0 0 0 -.319.42444l-.00049.00067h-3.29785a3.00328 3.00328 0 0 0 -3 3v14a3.00328 3.00328 0 0 0 3 3h14a3.00328 3.00328 0 0 0 3-3v-14a3.00328 3.00328 0 0 0 -3-3zm1 17a1.00067 1.00067 0 0 1 -1 1h-14a1.001 1.001 0 0 1 -1-1v-14a1.0013 1.0013 0 0 1 1-1h4.55042a2.50011 2.50011 0 0 1 4.89916 0h4.55042a1.001 1.001 0 0 1 1 1z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                <g fill="white" class="fill">
+                  <path d="m6 7c0-.27614.22386-.5.5-.5h3c.27614 0 .5.22386.5.5s-.22386.5-.5.5h-3c-.27614 0-.5-.22386-.5-.5z"/>
+                  <path d="m6.5 8.5c-.27614 0-.5.22386-.5.5s.22386.5.5.5h2c.27614 0 .5-.22386.5-.5s-.22386-.5-.5-.5z"/>
+                  <path d="m2.00001 8c0-3.31371 2.6863-6 6-6 3.31369 0 5.99999 2.68629 5.99999 6 0 3.3137-2.6863 6-5.99999 6-1.09362 0-2.12012-.293-3.00383-.805l-2.33805.7793c-.17596.0587-.36993.0151-.50391-.1131-.13397-.1283-.18592-.3202-.13497-.4986l.71161-2.4906c-.46606-.8534-.73085-1.83243-.73085-2.872zm6-5c-2.76142 0-5 2.23858-5 5 0 .93308.25512 1.80506.69912 2.5517.07039.1183.08884.2605.05101.3929l-.50895 1.7813 1.65819-.5527c.14261-.0476.29905-.0284.42598.0521.77318.4906 1.68997.7747 2.67465.7747 2.76139 0 4.99999-2.2386 4.99999-5 0-2.76142-2.2386-5-4.99999-5z"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="button-icon">
+          <button class="buttons dark">Let`s Talk</button>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="moon">
+              <path d="m0 0h24v24h-24z" fill="transparent" opacity="1"/>
+              <path d="m12.3 22h-.1a10.31 10.31 0 0 1 -7.34-3.15 10.46 10.46 0 0 1 -.26-14 10.13 10.13 0 0 1 4-2.74 1 1 0 0 1 1.06.22 1 1 0 0 1 .24 1 8.4 8.4 0 0 0 1.94 8.81 8.47 8.47 0 0 0 8.83 1.94 1 1 0 0 1 1.27 1.29 10.16 10.16 0 0 1 -2.34 3.63 10.28 10.28 0 0 1 -7.3 3z" class="moon-fill" fill="#D8E68F"/>
+            </svg>
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="sun">
+              <path d="m256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7-100.5-33.5c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0s-49.9-131.1 0-181 131.1-49.9 181 0 49.9 131.1 0 181z" fill="#D8E68F"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Headr -->
+    <!-- Start Landing Section -->
+    <div class="landing-section">
+      <div class="contanier">
+        <div class="social">
+          <span class="order">Follow On</span>
+          <span class="line"></span>
+          <div class="social-icon">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="picture-info">
+          <div class="picture">
+            <img src="imgs/my-picture.png">
+          </div>
+          <div class="info">
+            <span>Hello, I`m</span>
+            <h1 class="name">Amr Elmasry</h1>
+            <span>Front-End Web Developer</span>
+            <a href="#contact">
+              <button>
+                Hire Me
+                <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m14.9999 15.2547c-1.1338-.7909-2.5127-1.2547-4-1.2547-3.59591 0-6.55854 2.7114-6.95492 6.2013-.02805.247-.04208.3705.00723.4898.04035.0975.12769.1953.22009.2464.11292.0625.25116.0625.52762.0625h5.14473m4.05525-1.7143 1.8 1.7143 4.2-4m-5-10c0 2.20914-1.7908 4-4 4-2.20912 0-3.99998-1.79086-3.99998-4s1.79086-4 3.99998-4c2.2092 0 4 1.79086 4 4z" stroke="#000" class="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <a href="#about" class="scroll-icon">
+          <div class="mouse-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill">
+              <path d="m0 0h24v24h-24z" fill="none"/>
+              <path d="m11.141 4c-1.582 0-2.387.169-3.128.565a3.453 3.453 0 0 0 -1.448 1.448c-.396.74-.565 1.546-.565 3.127v5.718c0 1.582.169 2.387.565 3.128.337.63.818 1.111 1.448 1.448.74.396 1.546.565 3.128.565h1.718c1.582 0 2.387-.169 3.128-.565a3.453 3.453 0 0 0 1.448-1.448c.396-.74.565-1.546.565-3.128v-5.718c0-1.582-.169-2.387-.565-3.128a3.453 3.453 0 0 0 -1.448-1.448c-.74-.395-1.546-.564-3.127-.564h-1.72zm0-2h1.718c2.014 0 3.094.278 4.072.801a5.452 5.452 0 0 1 2.268 2.268c.523.978.801 2.058.801 4.072v5.718c0 2.014-.278 3.094-.801 4.072a5.452 5.452 0 0 1 -2.268 2.268c-.978.523-2.058.801-4.072.801h-1.719c-2.014 0-3.094-.278-4.072-.801a5.452 5.452 0 0 1 -2.268-2.268c-.522-.978-.8-2.058-.8-4.072v-5.719c0-2.014.278-3.094.801-4.072a5.452 5.452 0 0 1 2.269-2.267c.977-.523 2.057-.801 4.071-.801zm-.141 4h2v5h-2z"/>
+            </svg>
+          </div>
+          <span>Scroll Down</span>
+          <div class="angle-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill">
+              <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- End Landing Section -->
+    <!-- Start About -->
+    <div class="about" id="about">
+      <div class="main-heading media dark">
+        <h3>About</h3>
+      </div>
+      <div class="contanier">
+        <div class="my-picture dark">
+          <img src="imgs/my-picture.png">
+        </div>
+        <div class="details">
+          <h2>I`m <span>Amr Elmasry</span>, a Web developer</h2>
+          <p class="paragraph-one">I`m a front-end web developer with a strong passion for creating visually appealing and user-friendly web pages. I`m very passionate about improving my coding skills & developing developing websites.</p>
+          <p class="paragraph-two">I have also gained a solid foundation in HTML, CSS, and JavaScript. I always eager to learn new technologies to enhance my skillset.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Skiils -->
+    <div class="skills">
+      <div class="main-heading dark">
+        <h3>Skills</h3>
+      </div>
+      <div class="contanier">
+        <div class="box style-box skill">
+          <img src="imgs/html-5.svg">
+        </div>
+        <div class="box style-box skill">
+          <img src="imgs/css-3.svg">
+        </div>
+        <div class="box style-box skill">
+          <img src="imgs/javascript-js.svg">
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
+    <!-- Start Services -->
+    <div class="services" id="services">
+      <div class="main-heading dark">
+        <h3>Services</h3>
+      </div>
+      <div class="contanier">
+        <div class="box style-box card">
+          <img src="imgs/web.png">
+          <h3>Web Develpoment</h3>
+          <p>I can build a website by using HTML, CSS, JavaScript</p>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/responsive.png">
+          <h3>Responsive Design</h3>
+          <p>Your website will be 100% responsive for all devices. Tablets and Smart phones.</p>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/creative.png">
+          <h3>Creative Design</h3>
+          <p>I can edit your current website by adding a new content to make it much better.</p>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/ideas.png">
+          <h3>Web Ideas</h3>
+          <p>I could turn your ideas into a real projects with high quality.</p>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/retouch.png">
+          <h3>Retouch</h3>
+          <p>iI can help you by redesign yoyr current website to looks much better.</p>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/support.png">
+          <h3>Support</h3>
+          <p>Support is available if you want make any changes for your website after dilvering it.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Projects -->
+    <div class="projects" id="projects">
+      <div class="main-heading dark">
+        <h3>Projects</h3>
+      </div>
+      <div class="contanier">
+        <div class="box style-box card">
+          <img src="imgs/ecommerce-picture.png">
+          <h5 class="name-project">Ecommerce Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>62.3%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>26.3%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>11.4%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/ecommerce-wesite/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/ecommerce-wesite.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/dashboard-picture.png">
+          <h5 class="name-project">Dashboard Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>59.1%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>40.0%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>0.9%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/dashboard-design/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/dashboard-design.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/question-picture.png">
+          <h5 class="name-project">Questions App</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>12.0%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>32.5%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>55.5%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/question-app/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/question-app.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/foodi-picture.png">
+          <h5 class="name-project">Foodi Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>40.4%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>52.7%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>6.9%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/foodi-website/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/foodi-website.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/cruds-picture.png">
+          <h5 class="name-project">Cruds Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>13.8%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>16.5%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>69.7%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/CRUD-Project/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/CRUD-Project.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/elmasry-picture.png">
+          <h5 class="name-project">Elmasry Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>42.4%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>54.4%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>3.2%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/elmasry-website/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/elmasry-website.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/wealthome-picture.png">
+          <h5 class="name-project">Wealthome Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>48.0%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>42.8%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>9.2%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/wealth-home-website/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/wealth-home-website.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/typingspeed-picture.png">
+          <h5 class="name-project">Typing Speed Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>8.6%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>31.8%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>59.6%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/typing-speed-app/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/typing-speed-app.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/social-picture.png">
+          <h5 class="name-project">Socialbook Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>55.0%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>29.1%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>15.9%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/my-socialbook-website/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/my-socialbook-website.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/hungman-picture.png">
+          <h5 class="name-project">Hungman Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>13.7%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>33.7%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>52.6%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/hungman-game-app/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/hungman-game-app.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/nft-picture.png">
+          <h5 class="name-project">NTF Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>39.1%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>30.5%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>30.4%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/NTF-website/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/NTF-website.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/weather-picture.png">
+          <h5 class="name-project">Weather Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>36.1%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>38.5%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>25.4%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/weather-app/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/weather-app.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="box style-box card">
+          <img src="imgs/decbase-picture.png">
+          <h5 class="name-project">Decbase Website</h5>
+          <div class="languages-percentage">
+            <div class="html">
+              <span>HTML</span>
+              <span>39.9%</span>
+            </div>
+            <div class="css">
+              <span>CSS</span>
+              <span>52.1%</span>
+            </div>
+            <div class="js">
+              <span>JavaScript</span>
+              <span>8.0%</span>
+            </div>
+          </div>
+          <div class="links-this-website">
+            <a href="https://amr-elmasry3.github.io/decbase-website/" target="_blank" class="live-website">show website<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Amr-Elmasry3/decbase-website.git" target="_blank" class="githab-code">github<i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Projects -->
+    <!-- Start Contact -->
+    <div class="contact" id="contact">
+      <div class="main-heading dark">
+        <h3>Get in Touch</h3>
+      </div>
+      <div class="contanier">
+        <div class="contact-info">
+          <h3 class="title">CONTACT INFO</h3>
+          <div class="box">
+            <i class="fa-solid fa-envelope style-box"></i>
+            <div class="info">
+              <span>E-MAIL</span>
+              <h3>www.amrelmasry66@gmail.com</h3>
+              <a href="mailto:someone@example.com" target="_blank">Send <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa-brands fa-whatsapp style-box"></i>
+            <div class="info">
+              <span>WHATSAPP</span>
+              <h3>+0102 656 7600</h3>
+              <a href="https://wa.me/+201026567600?text=Hello%20there%20How%20can%20i%20help%20you" target="_blank">Send <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="send-message style-box">
+          <h2>LET`S WORK TOGETHER.</h2>
+          <form action="https://formsubmit.co/www.amrelmasry66@gmail.com" method="POST">
+            <input type="text" name="Name" placeholder="Enter Your Name" required class="same-bg">
+            <input type="email" name="Email" placeholder="Enter Your Email" required class="same-bg">
+            <input type="text" name="Phone" placeholder="Enter Your Phone" required class="same-bg">
+            <textarea placeholder="Enter Your Message" name="Message" class="same-bg"></textarea>
+            <input type="submit" value="Send Message">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer style-box">
+      <h2>3MR</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- End Footer -->
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
