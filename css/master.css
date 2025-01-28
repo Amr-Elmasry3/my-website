@@ -70,6 +70,7 @@ textarea:focus{
   border-radius: var(--border-radius);
   font-size: 14px;
   cursor: pointer;
+  transition: var(--transition-duration);
 }
 .buttons.dark{
   color: var(--first-color);
@@ -88,6 +89,7 @@ textarea:focus{
   left: 0;
   border-radius: 10px;
   z-index: -1;
+  transition: var(--transition-duration);
 }
 .buttons.dark::before{
   background-color: var(--first-color);
@@ -97,15 +99,12 @@ textarea:focus{
 }
 .buttons.dark:hover{
   color: var(--second-color);
-  transition: var(--transition-duration);
 }
 .buttons.light:hover{
   color: var(--white-color);
-  transition: var(--transition-duration);
 }
 .buttons:hover::before{
   width: 100%;
-  transition: var(--transition-duration);
 }
 .main-heading{
   width: fit-content;
@@ -121,6 +120,7 @@ textarea:focus{
 .main-heading h3{
   padding: 6px 18px;
   position: relative;
+  transition: var(--transition-duration);
 }
 .main-heading.dark h3{
   color: var(--first-color);
@@ -132,11 +132,9 @@ textarea:focus{
 }
 .main-heading.dark h3:hover{
   color: var(--second-color);
-  transition: var(--transition-duration);
 }
 .main-heading.light h3:hover{
   color: var(--white-color);
-  transition: var(--transition-duration);
 }
 .main-heading h3::before,
 .main-heading h3::after{
@@ -220,6 +218,7 @@ textarea:focus{
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: var(--transition-duration);
 }
 .headr .contanier .links li::before{
   position: absolute;
@@ -229,6 +228,7 @@ textarea:focus{
   font-size: 12px;
   padding: 4px 8px;
   opacity: 0;
+  transition: var(--transition-duration);
 }
 .headr .contanier .links li:first-of-type::before{
   content: "Home";
@@ -253,11 +253,11 @@ textarea:focus{
   border-color: var(--first-color) transparent transparent transparent;
   top: -15px;
   opacity: 0;
+  transition: var(--transition-duration);
 }
 .headr .contanier .links li:hover::before,
 .headr .contanier .links li:hover::after{
   opacity: 1;
-  transition: var(--transition-duration);
 }
 .headr .contanier .links li:hover::before{
   top: -45px;
@@ -276,7 +276,6 @@ textarea:focus{
 }
 .headr .contanier .links li:hover{
   background-color: var(--first-color);
-  transition: var(--transition-duration);
 }
 .headr .contanier .links li:hover .stroke{
   stroke: var(--second-color);
@@ -554,7 +553,9 @@ textarea:focus{
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
   margin-top: 90px;
 }
 .skills .contanier::before{
@@ -577,10 +578,26 @@ textarea:focus{
   background-color: var(--white-color);
   border-radius: 15px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.skills .contanier .box img{
-  width: 60px;
+.skills .contanier .box i{
+  font-size: 65px;
+}
+.skills .contanier .box:first-of-type > i {
+  color: #e54e21;
+}
+.skills .contanier .box:nth-of-type(2) > i {
+  color: #214ce5;
+}
+.skills .contanier .box:nth-of-type(3) > i {
+  color: #f7e018;
+}
+.skills .contanier .box:nth-of-type(4) > i {
+  color: #cd669a;
+}
+.skills .contanier .box:last-of-type > i {
+  color: #5b4083;
 }
 /* End Skills */
 /* Start Services */
@@ -639,38 +656,56 @@ textarea:focus{
   box-shadow: 0 0 4px var(--white-color);
 }
 .projects .contanier .box .name-project{
-  margin: 5px 0;
+  margin: 8px 0;
   text-align: center;
   font-size: 17px;
-  color: var(--first-color)
+  color: var(--first-color);
+  position: relative;
+}
+.projects .contanier .box .name-project .new{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  background-color: red;
+  padding: 2px 5px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 .projects .contanier .box img{
   width: 100%;
   height: 225px;
 }
-.projects .contanier .box .languages-percentage{
+.projects .contanier .box .languages-tools{
   padding: 7px 20px;
   margin: 10px 0;
   border-top: 1px solid var(--white-color);
   border-bottom: 1px solid var(--white-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.projects .contanier .box .languages-percentage div{
+  height: 95px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  justify-content: center;
 }
-.projects .contanier .box .languages-percentage div span:first-of-type{
-  color: var(--silver-color);
-  font-size: 14px;
-  font-weight: bold;
-}
-.projects .contanier .box .languages-percentage div span:last-of-type{
+.projects .contanier .box .languages-tools h4{
+  margin: 5px 0;
+  text-align: center;
+  font-size: 16px;
   color: var(--first-alt-color);
-  font-size: 12px;
+}
+.projects .contanier .box .languages-tools .languages-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 8px 0 5px;
+}
+.projects .contanier .box .languages-tools .languages-box span{
+  color: var(--silver-color);
+  font-size: 13px;
   font-weight: 700;
 }
 .projects .contanier .box .links-this-website{
@@ -686,10 +721,10 @@ textarea:focus{
   align-items: center;
   gap: 7px;
   font-weight: 600;
+  transition: var(--transition-duration);
 }
 .projects .contanier .box .links-this-website a:hover{
   color: var(--first-color);
-  transition: var(--transition-duration);
 }
 .projects .contanier .box .links-this-website a i{
   margin-top: 2px;

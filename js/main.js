@@ -49,17 +49,17 @@ moonIcon.onclick= function (){
   socialLine.style.cssText= "background-color: #D8E68F";
   socialIcon.forEach((icon) => {
     icon.style.cssText= "color: #D8E68F";
-  })
+  });
   picOfHeadingSection.style.cssText= "background-image: linear-gradient(180deg,#D8E68F,#FFFFFF)";
   nameOfHeadingSection.style.cssText= "color: #D8E68F";
   spanOfInfoSection.forEach((span) => {
     span.style.cssText= "color: #C4C4C4";
-  })
+  });
   buttonOfHeadingSection.style.cssText= "background-color: #D8E68F ; color: #3E3F2D";
   buttonSvg.style.cssText= "stroke: #3E3F2D";
   scrolliconSvg.forEach((icon) => {
     icon.style.cssText= "fill: #D8E68F";
-  })
+  });
   scrollIconSpan.style.cssText= "color: #D8E68F";
 
   // Start About Section
@@ -68,15 +68,15 @@ moonIcon.onclick= function (){
   h2OfAboutSection.style.cssText= "color: #E8E9D7";
   paragraphsOfAboutSection.forEach((para) => {
     para.style.cssText= "color: #C4C4C4";
-  })
+  });
 
   // Start Contact Section
   formInputs.forEach((input) => {
     input.style.cssText= "background-color: #35364B ; color: #FFFFFF";
-  })
+  });
   sendLink.forEach((link) => {
     link.style.cssText= "color: #D8E68F";
-  })
+  });
 
   // Change Css Style For All Main Heading
   allMainHeading.forEach((heading) => {
@@ -84,13 +84,13 @@ moonIcon.onclick= function (){
       heading.classList.remove("light");
       heading.classList.add("dark");
     }
-  })
+  });
 
   // Change Background Color For All Element There Have StyleBox Class
   allClassStyleBox.forEach((box) => {
     box.style.cssText= "background-color: #2B2D41";
-  })
-}
+  });
+};
 
 sunIcon.onclick= function (){
   sunIcon.style.cssText= "display: none";
@@ -110,17 +110,17 @@ sunIcon.onclick= function (){
   socialLine.style.cssText= "background-color: #3E3F2D";
   socialIcon.forEach((icon) => {
     icon.style.cssText= "color: #3E3F2D";
-  })
+  });
   picOfHeadingSection.style.cssText= "background-image: linear-gradient(180deg,#3E3F2D,transparent)";
   nameOfHeadingSection.style.cssText= "color: #3E3F2D";
   spanOfInfoSection.forEach((span) => {
     span.style.cssText= "color: #7F7F7F";
-  })
+  });
   buttonOfHeadingSection.style.cssText= "background-color: #3E3F2D ; color: #FFFFFF";
   buttonSvg.style.cssText= "stroke: #FFFFFF";
   scrolliconSvg.forEach((icon) => {
     icon.style.cssText= "fill: #3E3F2D";
-  })
+  });
   scrollIconSpan.style.cssText= "color: #3E3F2D";
 
   // Start About Section
@@ -129,15 +129,15 @@ sunIcon.onclick= function (){
   h2OfAboutSection.style.cssText= "color: #3E3F2D";
   paragraphsOfAboutSection.forEach((para) => {
     para.style.cssText= "color: #7F7F7F";
-  })
+  });
 
   // Start Contact Section
   formInputs.forEach((input) => {
     input.style.cssText= "background-color: #E8E9D7 ; color: #3E3F2D";
-  })
+  });
   sendLink.forEach((link) => {
     link.style.cssText= "color: #3E3F2D";
-  })
+  });
   
   // Change Css Style For All Main Heading
   allMainHeading.forEach((heading) => {
@@ -145,22 +145,22 @@ sunIcon.onclick= function (){
       heading.classList.remove("dark");
       heading.classList.add("light");
     }
-  })
+  });
 
   // Change Background Color For All Element There Have StyleBox Class
   allClassStyleBox.forEach((box) => {
     box.style.cssText= "background-color: #3E3F2D";
-  })
-}
+  });
+};
 
 // Put Class Active On Difference Links
 allLinks.forEach((link) => {
   link.addEventListener("click", (eve) => {
     allLinks.forEach((link) => {
       link.classList.remove("active");
-    })
+    });
     eve.currentTarget.classList.add("active");
-  })
+  });
 });
 
 // ScrollReveall Animation
