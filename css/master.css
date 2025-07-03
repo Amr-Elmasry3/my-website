@@ -179,18 +179,18 @@ textarea:focus{
 .my-website{
   overflow: hidden;
 } 
-.update {
+.my-website .update {
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background-color: var(--White-color);
+  background-color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
  } 
-.update h1 {
+.my-website .update h1 {
   color: var(--dark-color);
  } 
 
