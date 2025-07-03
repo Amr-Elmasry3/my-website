@@ -189,6 +189,7 @@ textarea:focus{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 120;
  } 
 .my-website .update h1 {
   color: var(--dark-color);
